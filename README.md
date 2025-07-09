@@ -24,12 +24,14 @@ python main.py --config path/to/custom_config.ini
 [Model]
 - dim_embedding: Dimensionality of user/item embeddings
 - batch_size: Training batch size
+
 [Dataset]
 - train_file: Path to training data
 - test_file: Path to test data
 - user_side_file: Path to user social relationship file
 - dim_user_feature: Dimensionality of user features
 - dim_item_feature: Dimensionality of item features
+
 [Training]
 - gpu: GPU device ID to use
 - max_iteration: Maximum training iterations
@@ -38,11 +40,13 @@ python main.py --config path/to/custom_config.ini
 - early_stop: Validation patience iterations
 - num_negative: Negative items per user in oversmoothing loss computation
 - omega_0 to omega_5: Multi-task loss weights
+
 [Debugging]
 - iter_per_info: Training log frequency
 - iter_per_saving: Model save frequency
 - model_saving_path: Model storage directory
 - continue: Resume training flag
+  
 [Security]
 - randomization: Privacy protection toggle
 - lambda: Laplacian noise scale
