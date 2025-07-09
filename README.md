@@ -18,7 +18,7 @@ python LapGLP.py
 Uses `config.ini` in working directory automatically
 ### Custom Configuration
 ```bash
-python main.py --config path/to/custom_config.ini
+python LapGLP.py your_config_file.ini
 ```
 ## Configuration Parameters (config.ini)
 [Model]
