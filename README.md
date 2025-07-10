@@ -52,3 +52,32 @@ python LapGLP.py your_config_file.ini
 - lambda: Laplacian noise scale
 - delta: Gradient clipping threshold
 - p: Random response probability
+
+## Dataset File Format
+To successfully run this recommender system with your own data, please prepare the following files in the specified formats. All files are ​space-delimited text files​ with no header row.
+
+### Training Data File (train_file)
+- Format: user_id item_id rating_value
+​- Purpose: Contains user-item interactions for model training
+​- Required: Yes
+​- Characteristics:
+-- Each line represents one interaction
+-- IDs must be non-negative integers (start from 0)
+-- Ratings should be continuous values
+-- File must include all items that appear in test file
+
+### Test Data File (test_file)
+- Format: user_id item_id rating_value
+- ​Purpose: Used for model evaluation
+​- Required: Yes
+​- Characteristics:
+-- Same format as training file
+-- Must include only users present in training data
+
+### User Social File (user_side_file)
+- Format: user_id user_id relation_weight
+​- Purpose: Provides supplementary user social information
+​- Required: No (can be omitted)
+​- Characteristics:
+-- Represents user social relations in sparse format
+-- relation weights typically in [0,1] range
