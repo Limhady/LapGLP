@@ -13,12 +13,12 @@ Experimental comparisons with state-of-the-art federated RS methods demonstrate 
 ## Usage
 ### Default Configuration
 ```bash
-python LapGLP.py
+python main.py
 ```
 Uses `config.ini` in working directory automatically
 ### Custom Configuration
 ```bash
-python LapGLP.py your_config_file.ini
+python main.py your_config_file.ini
 ```
 ## Configuration Parameters (config.ini)
 [Model]
