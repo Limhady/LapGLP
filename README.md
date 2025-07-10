@@ -22,8 +22,8 @@ Experimental comparisons with state-of-the-art federated RS methods demonstrate 
 This component replaces explicit multi-layer graph propagation with a Laplacian-based constraint mechanism to approximate infinite graph convolutions. Instead of performing iterative message-passing steps (which risk privacy leaks and computational overhead), LapGLP formulates the graph convolution as a weighted minimum squared error (MSE) problem. 
 ### Multi-Loss Optimization Framework
 The architecture incorporates a multi-objective loss function to handle explicit feedback data and graph properties simultaneously. This optimization involves:
- ​Weighted MSE for Graph Smoothness: Penalizes deviations in embeddings to maintain structural consistency, using a smoothness loss derived from Laplacian constraints.
-​- Probabilistic Rating Loss for Explicit Feedback: Transforms explicit ratings (e.g., 1–5 stars) into graded categorical distributions.
+- ​Weighted MSE for Graph Smoothness: Penalizes deviations in embeddings to maintain structural consistency, using a smoothness loss derived from Laplacian constraints.
+- Probabilistic Rating Loss for Explicit Feedback: Transforms explicit ratings (e.g., 1–5 stars) into graded categorical distributions.
 ### Federated Computation Flow for Privacy Preservation
 This component outlines the federated learning workflow, splitting computations into client-local and server-global phases to protect user data.
 
