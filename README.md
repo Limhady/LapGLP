@@ -120,7 +120,7 @@ To successfully run this recommender system with your own data, please prepare t
 ## Directory Structure
 ```
 LapGLP/
-├── datasets/              # Sample data
+├── data/              # Sample data
 ├── LapGLP/
 │   ├── util               # Utilities
 │   │   └── data_loader.py # Load and process training, testing and social-information data
